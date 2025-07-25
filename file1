@@ -1,0 +1,12 @@
+# Make sure there's a visible change
+echo "test line" >> f2
+
+# Check what Git sees
+git status
+
+# Try stashing untracked file
+git stash -u
+
+# Confirm it's stashed
+git stash list
+
